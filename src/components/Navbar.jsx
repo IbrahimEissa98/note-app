@@ -87,7 +87,7 @@ export default function NavbarComponent({ toggleTheme }) {
           </>
         )}
         <NavbarItem>
-          <a href="https://github.com/IbrahimEissa98/" target="_blank">
+          <a href="https://github.com/IbrahimEissa98/note-app" target="_blank">
             <svg
               aria-hidden="true"
               className="octicon octicon-mark-github fill-black dark:fill-white"

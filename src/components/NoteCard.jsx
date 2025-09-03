@@ -15,7 +15,10 @@ export default function NoteCard({
 }) {
   return (
     <div
-      onClick={onOpenViewNote}
+      onClick={() => {
+        setSelectedNote(note);
+        onOpenViewNote();
+      }}
       className="flex flex-col justify-between group h-full bg-white dark:bg-neutral-950 hover:scale-105 transition-all duration-400 hover:bg-violet-600 dark:hover:bg-violet-600 border border-zinc-200 dark:border-zinc-700 rounded-xl shadow-lg shadow-black/40 dark:shadow-white/30 p-4 relative w-full cursor-pointer"
     >
       <div className="">

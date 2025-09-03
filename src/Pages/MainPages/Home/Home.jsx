@@ -112,7 +112,7 @@ export default function Home() {
                 Updating...
               </div>
             )}
-            {notes?.map((note) => (
+            {[...notes].reverse().map((note) => (
               <NoteCard
                 key={note._id}
                 note={note}

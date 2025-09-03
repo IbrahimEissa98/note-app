@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import logo from "../../../assets/images/note-logo.png";
@@ -6,7 +6,6 @@ import logo from "../../../assets/images/note-logo.png";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { loginSchema } from "../../../lib/schema/authSchemas";
-import { AuthApi } from "../../../lib/constants/auth";
 import { Button, Form, Input } from "@heroui/react";
 import PassToggle from "../../../components/PassToggle";
 import ToggleTheme from "../../../components/ToggleTheme";
@@ -14,7 +13,7 @@ import { isLoginContext } from "../../../contexts/LoginContext";
 import { useMutation } from "@tanstack/react-query";
 import { apiServices } from "../../../services/ApisClass";
 
-export default function Login({ toggleTheme }) {
+export default function Login() {
   const [errMsg, setErrMsg] = useState("");
   const [succMsg, setSuccMsg] = useState("");
   const [isVisible, setIsVisible] = useState(false);
@@ -59,9 +58,9 @@ export default function Login({ toggleTheme }) {
     <>
       <div className="flex items-center max-w-[400px] w-full shadow-xl p-5 rounded-2xl bg-[#F9FFFB] dark:bg-slate-900">
         <div className="py-10 px-5 w-full border-2 border-black/10 dark:border-white/30 rounded-lg relative">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2">
+          {/* <div className="absolute top-0 left-1/2 -translate-x-1/2">
             <ToggleTheme toggleTheme={toggleTheme} />
-          </div>
+          </div> */}
           <div className="flex justify-center items-center gap-3">
             <img src={logo} className="w-[50px]" alt="note logo" />
             <h2 className="font-jost font-medium text-2xl">

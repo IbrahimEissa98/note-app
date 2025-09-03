@@ -1,6 +1,5 @@
 import loadingImg from "../assets/images/loader.gif";
 import logo from "../assets/images/note-logo.png";
-import { Spinner } from "@heroui/react";
 
 export default function LoadingPage() {
   return (

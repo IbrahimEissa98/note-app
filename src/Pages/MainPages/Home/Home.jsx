@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { addToast, useDisclosure } from "@heroui/react";
 import CreateNoteModal from "../../../components/CreateNoteModal";
 import NoteCard from "../../../components/NoteCard";

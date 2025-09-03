@@ -4,7 +4,7 @@ import Login from "./Pages/AuthPages/Login/Login";
 import Register from "./Pages/AuthPages/Register/Register";
 import MainLayout from "./Pages/MainPages/MainLayout";
 import Home from "./Pages/MainPages/Home/Home";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { useEffect, useState } from "react";
 import NotFound from "./Pages/MainPages/NotFound/NotFound";
@@ -14,7 +14,6 @@ import { queryClient } from "./services/constants";
 
 function App() {
   const [theme, setTheme] = useState(null);
-  // const [showLoadingPage, setShowLoadingPage] = useState(true);
 
   useEffect(() => {
     if (!("theme" in localStorage)) {
@@ -55,7 +54,7 @@ function App() {
           path: "login",
           element: (
             <AuthProtect>
-              <Login toggleTheme={toggleTheme} />
+              <Login />
             </AuthProtect>
           ),
         },
@@ -63,7 +62,7 @@ function App() {
           path: "register",
           element: (
             <AuthProtect>
-              <Register toggleTheme={toggleTheme} />
+              <Register />
             </AuthProtect>
           ),
         },

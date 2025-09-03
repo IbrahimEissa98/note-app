@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Outlet } from "react-router";
 import NavbarComponent from "../../components/Navbar";
 import LoadingPage from "../../components/LoadingPage";
@@ -9,7 +9,6 @@ export default function MainLayout({ toggleTheme }) {
   let loaderTimer = () => {
     setTimeout(() => {
       setShowLoadingPage(false);
-      // document.querySelector(".loader").classList.add("hidden!");
     }, 2000);
   };
 

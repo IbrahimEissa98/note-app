@@ -17,10 +17,8 @@ export default function CreateNoteModal({
   onCloseCreateNote,
   onOpenChangeCreateNote,
 }) {
-  // const [isOpen, setIsOpen] = useState(false);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  // const [isCreating, setIsCreating] = useState(false);
 
   const { mutate: handleAddNewNote, isPending: isPendingCreate } = useMutation({
     mutationFn: () => {

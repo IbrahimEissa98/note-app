@@ -38,12 +38,12 @@ export default function NoteCard({
         </div>
 
         {/* Title */}
-        <h3 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100 group-hover:text-white dark:group-hover:text-white mt-3 line-clamp-1">
+        <h3 className="text-lg break-all font-semibold text-zinc-800 dark:text-zinc-100 group-hover:text-white dark:group-hover:text-white mt-3 line-clamp-1">
           {note.title}
         </h3>
 
         {/* Description */}
-        <p className="text-sm text-zinc-600 dark:text-zinc-400 group-hover:text-white dark:group-hover:text-white mt-1 line-clamp-3">
+        <p className="text-sm break-all text-zinc-600 dark:text-zinc-400 group-hover:text-white dark:group-hover:text-white mt-1 line-clamp-3">
           {note.content}
         </p>
       </div>

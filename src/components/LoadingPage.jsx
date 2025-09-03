@@ -20,10 +20,9 @@ export default function LoadingPage() {
             </span>
           </h1>
         </div>
-
-        <p className="absolute bottom-3 left-1/2 -translate-x-1/2 text-black font-semibold">
-          Copyrights © Ibrahim Eissa
-        </p>
+        <div className="absolute w-full text-center bottom-3 left-1/2 -translate-x-1/2 text-black font-semibold">
+          <p>Copyrights © Ibrahim Eissa</p>
+        </div>
       </div>
     </>
   );
